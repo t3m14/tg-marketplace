@@ -1,1 +1,2 @@
-# tg-marketplace
+# @IThunterbot
+Бот для поиска работы на фрилансе.
