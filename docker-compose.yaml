@@ -6,9 +6,9 @@ services:
       context: ./backend:/backend
       command: sh -c python manage.py runserver 0.0.0.0:8000
     volumes:
-      -./backend:/backend
-      -./backend/static:/backend/static
-      -./backend/images:/backend/images
+      - ./backend:/backend
+      - ./backend/static:/backend/static
+      - ./backend/images:/backend/images
   bot:
     build:
       context: ./bot:/bot

@@ -38,10 +38,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'drf_spectacular', 
     'users',
     'deal',
     'feed'
 ]
+REST_FRAMEWORK = {     
+    # ВАШИ НАСТРОЙКИ     
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema', 
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

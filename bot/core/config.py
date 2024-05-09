@@ -2,4 +2,4 @@ import logging
 logging.basicConfig(level=logging.INFO)
 
 TOKEN = "6903906463:AAFGhWycYteAnIWo2chj3D2wg_1nXr4JfBI"
-BACKEND_URL = "http://127.0.0.1:8000/"
+API_URL = "http://127.0.0.1:8000/"

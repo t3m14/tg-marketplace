@@ -31,7 +31,8 @@ class Subcategory(models.Model):
         return self.name
 
 class Service(models.Model):
-    image = models.ImageField(upload_to='images/')
+    image = models.ImageField(upload_to='images/', null=True)
+    image_id = models.CharField(max_length=128, verbose_name="Айди картинки в телеграм")
     title = models.CharField(max_length=100, verbose_name='Название')
     description = models.TextField(verbose_name='Описание')
     price = models.IntegerField(verbose_name='Цена')
@@ -44,7 +45,8 @@ class Service(models.Model):
         return "Услуга + " + str(self.title)
 
 class Order(models.Model):
-    image = models.ImageField(upload_to='images/')
+    image = models.ImageField(upload_to='images/', null=True)
+    image_id = models.CharField(max_length=128, verbose_name="Айди картинки в телеграм")
     title = models.CharField(max_length=100, verbose_name='Название')
     description = models.TextField(verbose_name='Описание')
     price = models.IntegerField(verbose_name='Цена')
